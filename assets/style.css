@@ -32,6 +32,8 @@ h1, h2 {
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .site-nav a {
