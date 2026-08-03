@@ -9,3 +9,6 @@ Thumbs.db
 # Future tooling (kept ready, not in use yet — see CLAUDE.md)
 node_modules/
 .env
+
+# Subagent-driven-development scratch workspace
+.superpowers/
