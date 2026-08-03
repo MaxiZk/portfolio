@@ -1,0 +1,151 @@
+:root {
+  --text: #14171A;
+  --bg: #FAFAF7;
+  --main: #1B3A34;
+  --accent: #BA7517;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.rule {
+  width: 48px;
+  height: 3px;
+  background: var(--accent);
+  margin: 1.25rem 0;
+  border: none;
+}
+
+/* Nav */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--main);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Hero (Home / About / Contact placeholder layout) */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #4A4F55;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.filter-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--main);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.filter-btn[aria-pressed="true"] {
+  background: var(--main);
+  color: var(--bg);
+}
+
+/* Case study grid */
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.case-study {
+  border: 1px solid #DADDD8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #FFFFFF;
+}
+
+.case-study.is-hidden {
+  display: none;
+}
+
+.case-study .tags {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.case-study h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.case-study h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.case-study p {
+  font-size: 0.95rem;
+  color: #4A4F55;
+  line-height: 1.5;
+}
+
+.placeholder-image {
+  border: 1px dashed #B7BBB6;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  color: #7A7F7A;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
