@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Máximo Zuidwijk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="work.html" aria-current="page">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Work</h1>
+
+    <div class="filter-bar" role="group" aria-label="Filter case studies by tag">
+      <button type="button" class="filter-btn" data-tag="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-tag="security" aria-pressed="false">Security</button>
+      <button type="button" class="filter-btn" data-tag="automation" aria-pressed="false">Automation</button>
+      <button type="button" class="filter-btn" data-tag="qa" aria-pressed="false">QA</button>
+      <button type="button" class="filter-btn" data-tag="testing" aria-pressed="false">Testing</button>
+    </div>
+
+    <div class="case-study-grid">
+      <article class="case-study" data-tags="security automation">
+        <p class="tags">Security · Automation</p>
+        <h2>GraphSAST</h2>
+
+        <!-- TODO: replace with cropped graph + findings screenshot -->
+        <div class="placeholder-image" role="img" aria-label="Screenshot pending">Screenshot pending</div>
+
+        <h3>Problem</h3>
+        <p>Finding security vulnerabilities by manually reading code or running generic regex scanners is slow and produces endless false positives. Most static analyzers treat code as flat text instead of understanding how data actually flows through execution paths.</p>
+
+        <h3>What I did</h3>
+        <p>Designed and built a static security analysis tool that parses source code directly into a custom graph engine before compilation. Modeled the AST as a graph to run data-flow tracing algorithms — tracing untrusted user input directly to sensitive sinks automatically rather than relying on basic pattern matching.</p>
+
+        <h3>What came of it</h3>
+        <p>Built a functional developer prototype that highlights the exact execution path of a security flaw, reducing code-level vulnerability detection time and proving that manual QA domain knowledge can be translated into automated developer tooling.</p>
+      </article>
+
+      <article class="case-study" data-tags="qa testing">
+        <p class="tags">QA · Testing</p>
+        <h2>Forkify QA bug</h2>
+
+        <h3>Problem</h3>
+        <p>During functional testing of the Forkify recipe app, ingredient quantities entered as "0" vanished from the rendered output — a falsy-value check bug (JS treats 0 as falsy).</p>
+
+        <h3>What I did</h3>
+        <p>Traced the bug past the symptom to its root cause instead of just reporting what broke — documented exact repro steps, actual vs. expected, and severity.</p>
+
+        <h3>What came of it</h3>
+        <p>Accepted as a confirmed Major defect. Reinforced a pattern now watched for systematically — edge-case values that pass surface testing but break under specific input — the same category of flaw now traced automatically in GraphSAST's data-flow analysis, just at the code level.</p>
+      </article>
+    </div>
+  </main>
+
+  <script src="assets/filter.js"></script>
+</body>
+</html>
