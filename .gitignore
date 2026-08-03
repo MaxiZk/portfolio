@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Future tooling (kept ready, not in use yet — see CLAUDE.md)
+node_modules/
+.env
