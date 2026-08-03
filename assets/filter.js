@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     cards.forEach((card) => {
-      const tags = card.dataset.tags.split(' ');
+      const tags = (card.dataset.tags || '').split(' ');
       const show = tag === 'all' || tags.includes(tag);
       card.classList.toggle('is-hidden', !show);
     });
