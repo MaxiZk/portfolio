@@ -204,17 +204,11 @@ main h1 {
 }
 
 /* About */
-.photo-placeholder {
+.profile-photo {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-size: 0.75rem;
-  text-align: center;
+  object-fit: cover;
   margin-bottom: 2rem;
 }
 
