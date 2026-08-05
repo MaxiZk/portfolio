@@ -29,3 +29,14 @@ Máximo Zuidwijk's personal portfolio. Four pages: Home, Work, About, Contact. P
 
 - Don't introduce a JS framework, bundler, or CSS framework without discussing it first — the whole point of the current stack choice was avoiding that overhead.
 - Don't invent portfolio content (metrics, quotes, project details) — ask for the real source first.
+
+## Rules learned from FE-03 drill
+
+- Filter/list features default to multi-select OR logic unless single-select is 
+  explicitly requested — verify by testing two simultaneous filters active at once, 
+  don't assume a passing test suite covered it.
+- Never `git add -A` in this repo. `.claude/` and any plugin scratch output 
+  (e.g. `graphify-out/`) must never be committed — always stage specific files.
+- Any Google Fonts `<link>` must be checked by inspecting the computed font-family 
+  in devtools after loading the page, not just by reading the URL — a typo'd query 
+  parameter (e.g. `familyy=`) fails silently and falls back to a system font.
