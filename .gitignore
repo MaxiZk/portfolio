@@ -9,3 +9,8 @@ Thumbs.db
 # Future tooling (kept ready, not in use yet — see CLAUDE.md)
 node_modules/
 .env
+
+# Claude Code plugin scratch/config — never commit these (see CLAUDE.md FE-03 rules)
+.claude/
+.superpowers/
+graphify-out/
