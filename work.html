@@ -33,6 +33,7 @@
         <img src="assets/graphsast-screenshot.png" alt="GraphSAST graph view showing a highlighted data-flow path from a request parameter to a database query sink, with 3 vulnerabilities detected and CWE classifications listed.">
         <p class="tags">Security · Automation</p>
         <h2>GraphSAST — Automated Static Security Analysis</h2>
+        <p><a href="https://github.com/MaxiZk/graphsast" target="_blank" rel="noopener">View repo →</a></p>
 
         <h3>The Problem</h3>
         <p>Finding security vulnerabilities by manually reading code or running generic regex scanners is slow and produces endless false positives. Most static analyzers treat code as flat text instead of understanding how data actually flows through execution paths.</p>
@@ -41,7 +42,7 @@
         <p>I designed and built a static security analysis tool that parses source code directly into a custom graph engine before compilation. I modeled the AST as a graph to run data-flow tracing algorithms — tracing untrusted user input directly to sensitive sinks automatically rather than relying on basic pattern matching.</p>
 
         <h3>What Came of It</h3>
-        <p>Built a functional developer prototype that highlights the exact execution path of a security flaw, reducing code-level vulnerability detection time and proving that manual QA domain knowledge can be translated into automated developer tooling.</p>
+        <p>On a real test case (a Node.js/Mongoose Finance API), GraphSAST traced 3 distinct vulnerabilities across 3 CWE categories — SQL Injection, OS Command Injection, and Cross-Site Scripting — each with the full source-to-sink path highlighted, not just a flagged line number. That's the core difference from pattern-matching scanners: a developer sees *why* something is a vulnerability, not just *that* it might be.</p>
       </article>
 
       <article class="case-study" data-tags="qa testing">
