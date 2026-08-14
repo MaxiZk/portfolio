@@ -4,6 +4,7 @@
   --bg: #FAFAF7;
   --main: #1B3A34;
   --accent: #BA7517;
+  --accent-text: #8A5A12;
   --border: #DADDD8;
   --max-width: 760px;
 }
@@ -49,6 +50,7 @@ a {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-secondary);
+  padding: 0.5rem 0.25rem;
   padding-bottom: 2px;
 }
 
@@ -142,7 +144,8 @@ main h1 {
   background: transparent;
   border: 1.5px solid var(--border);
   color: var(--text-secondary);
-  padding: 0.4rem 0.9rem;
+  padding: 0.65rem 0.9rem;
+  min-height: 44px;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -175,7 +178,7 @@ main h1 {
 
 .case-study .tags {
   font-size: 0.8rem;
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.03em;
