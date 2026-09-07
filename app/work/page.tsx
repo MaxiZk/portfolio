@@ -1,19 +1,17 @@
 export default function Work() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="font-display text-4xl font-bold text-brand-dark mb-12">Work</h1>
-      
-      <div className="space-y-16">
+    <div style={{ maxWidth: "896px", margin: "0 auto", padding: "80px 24px", minHeight: "100vh", backgroundColor: "#FAFAF7", color: "#14171A" }}>
+      <h1 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px" }}>Work</h1>
+      <div style={{ display: "grid", gap: "64px" }}>
         <section>
-          <h2 className="font-display text-2xl font-bold text-brand-dark mb-3">System Graph SAST</h2>
-          <p className="text-brand-dark/70 mb-3">Static security analysis tool using TypeScript/Node.js + Neo4j</p>
-          <p className="text-sm text-brand-dark/50">Placeholder: case study goes here</p>
+          <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "12px" }}>System Graph SAST</h2>
+          <p style={{ opacity: 0.7, marginBottom: "12px" }}>Static security analysis tool using TypeScript/Node.js + Neo4j</p>
+          <p style={{ fontSize: "14px", opacity: 0.5 }}>Placeholder: case study goes here</p>
         </section>
-
         <section>
-          <h2 className="font-display text-2xl font-bold text-brand-dark mb-3">QA at a1qa</h2>
-          <p className="text-brand-dark/70 mb-3">Functional testing internship (completed)</p>
-          <p className="text-sm text-brand-dark/50">Placeholder: case study goes here</p>
+          <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "12px" }}>QA at a1qa</h2>
+          <p style={{ opacity: 0.7, marginBottom: "12px" }}>Functional testing internship (completed)</p>
+          <p style={{ fontSize: "14px", opacity: 0.5 }}>Placeholder: case study goes here</p>
         </section>
       </div>
     </div>

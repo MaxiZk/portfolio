@@ -2,28 +2,24 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="font-display text-4xl font-bold text-brand-dark mb-12">Contact</h1>
-      <div className="space-y-4">
+    <div style={{ maxWidth: "896px", margin: "0 auto", padding: "80px 24px", minHeight: "100vh", backgroundColor: "#FAFAF7", color: "#14171A" }}>
+      <h1 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px" }}>Contact</h1>
+      <div style={{ display: "grid", gap: "16px" }}>
         <div>
-          <p className="text-sm text-brand-dark/50 mb-1">Email</p>
-          <Link href="mailto:maxizuidwijk@gmail.com" className="text-brand-orange hover:underline">
+          <p style={{ fontSize: "14px", opacity: 0.5, marginBottom: "4px" }}>Email</p>
+          <Link href="mailto:maxizuidwijk@gmail.com" style={{ color: "#BA7517", textDecoration: "none" }}>
             maxizuidwijk@gmail.com
           </Link>
         </div>
         <div>
-          <p className="text-sm text-brand-dark/50 mb-1">LinkedIn</p>
-          <Link
-            href="https://linkedin.com/in/maximo-zuidwijk-9311271b2"
-            target="_blank"
-            className="text-brand-orange hover:underline"
-          >
+          <p style={{ fontSize: "14px", opacity: 0.5, marginBottom: "4px" }}>LinkedIn</p>
+          <Link href="https://linkedin.com/in/maximo-zuidwijk-9311271b2" target="_blank" style={{ color: "#BA7517", textDecoration: "none" }}>
             linkedin.com/in/maximo-zuidwijk-9311271b2
           </Link>
         </div>
         <div>
-          <p className="text-sm text-brand-dark/50 mb-1">GitHub</p>
-          <Link href="https://github.com/MaxiZk" target="_blank" className="text-brand-orange hover:underline">
+          <p style={{ fontSize: "14px", opacity: 0.5, marginBottom: "4px" }}>GitHub</p>
+          <Link href="https://github.com/MaxiZk" target="_blank" style={{ color: "#BA7517", textDecoration: "none" }}>
             github.com/MaxiZk
           </Link>
         </div>
